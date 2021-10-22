@@ -1,0 +1,67 @@
+{
+    "name": "APEX 20.1 API",
+    "package": "apex201",
+    "index": "content/aeapi/index.html",
+
+    "selectors": {
+        "article>header>ol.breadcrumb>li.active": [
+            {
+                "requiretext": "^([A-Z_])*\\b$",
+                "type": "Package",
+                "matchpath": "aeapi/.*\\.html"
+            }
+        ],
+        "article header h2": [
+            {
+                "requiretext": "Procedure",
+                "type": "Procedure",
+                "regexp": "[\\d]*\\.[\\d]*",
+                "replacement": "",
+                "matchpath": "aeapi/.*\\.html"
+            },
+            {
+                "requiretext": "Function",
+                "type": "Function",
+                "regexp": "[\\d]*\\.[\\d]*",
+                "replacement": "",
+                "matchpath": "aeapi/.*\\.html"
+            }
+        ],
+
+
+        "body h1.page-title": [
+               {
+                   "requiretext": "Namespace",
+                   "type": "Namespace",
+                   "regexp": "Namespace: ",
+                   "replacement": "",
+                   "matchpath": "aexjs/.*\\.html"
+               },
+               {
+                   "requiretext": "Widget",
+                   "type": "Widgets",
+                   "regexp": "Widget: ",
+                   "replacement": "",
+                   "matchpath": "aexjs/.*\\.html"
+               },
+               {
+                   "requiretext": "Interface",
+                   "type": "Interface",
+                   "regexp": "Interface: ",
+                   "replacement": "",
+                   "matchpath": "aexjs/.*\\.html"
+               }
+           ],
+           "article h4.name": [
+               {
+                   "type": "Function",
+                   "matchpath": "aexjs/global.html"
+               }
+           ]
+
+    },
+
+    "icon32x32": "apex-icon.png",
+    "allowJS": true,
+    "ExternalURL": "https://docs.oracle.com/en/database/oracle/application-express/20.1/aeapi/"
+}
