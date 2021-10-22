@@ -2,4 +2,5 @@
 
 dashing
 apex201.docset
-content
+content/aeapi/*
+content/aexjs/*
