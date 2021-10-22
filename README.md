@@ -1,13 +1,20 @@
 
 # APEX Documentation for Dash
 
+
 With this instructions you can build an offline [APEX](https://apex.oracle.com) documentation for [Dash](https://kapeli.com/dash).
+
+![Landing Page](apex-docs.gif)
+
 The process is very straight forward:
 
 * Download/Install [dashing](https://github.com/technosophos/dashing)
 * Download APEX API and JS HTML docs and extract them in these directories respectively.
+
+```
 content/aeapi/
 content/aexjs/
+```
 
 * Run 
 ```
